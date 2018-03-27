@@ -42,6 +42,11 @@ This example app uses Node, Express, Webpack, React, Redux, and Shopify/polaris
   - Set Add HOST from your tunnel service as `SHOPIFY_APP_HOST`
   - Add the api key from partners dash as `SHOPIFY_APP_KEY`
   - Add the api secret from partners dash as `SHOPIFY_APP_SECRET`
+  - Configure the application port as `SHOPIFY_APP_PORT` (defaults to 3000)
+  - Configure the shopify application storage engine as `SHOPIFY_APP_STORAGE_ENGINE` (defaults to 'memory', use 'redis' for production)
+  - Configure the Redis host if applicable as `REDIS_HOST` (defaults to 'localhost')
+  - Configure the Redis port if applicable as `REDIS_PORT`(defaults to 6379)
+
 - Run `yarn install && yarn run start`
 - Open a browser to `{{ HOST }}/install`
 - Enter your store’s domain and hit install
